@@ -21,4 +21,4 @@ Run `make`; requires ctrulib, makerom, and bannertool.
 ## Credits
 
 + Plailect
-+ Neobrain
++ neobrain
