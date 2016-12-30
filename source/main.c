@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "svchax.h"
 
 void finished() {
 	printf("\nPress (Start) to reboot...\n");
@@ -793,6 +792,8 @@ int main(int argc, char **argv) {
   gfxInitDefault();
   consoleInit(GFX_TOP, NULL);
   printf("nimSM by Plailect\n\n");
+	printf("This app requires external k11 hax\n");
+	printf("(such as fasthax) to have been run!\n\n");
 	printf("(X) Restore nim savegame from backup\n");
 	printf("(Y) Backup and zero out nim savegame\n");
 	printf("(B) Exit\n");
@@ -804,18 +805,12 @@ int main(int argc, char **argv) {
 
 				if (kDown & KEY_X) {
 					consoleClear();
-					printf("Attempting svchax...\n\n");
-				  svchax_init(true);
-					aptInit();
 					printf("Restoring nim savegame from backup...\n\n");
 					manageSave(true);
 					finished();
 				}
 				if (kDown & KEY_Y) {
 					consoleClear();
-					printf("Attempting svchax...\n\n");
-				  svchax_init(true);
-					aptInit();
 					printf("Backing up and deleting nim savegame...\n\n");
 					manageSave(false);
 					finished();
