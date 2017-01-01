@@ -3,7 +3,7 @@ BasicInfo:
   CompanyCode             : "00"
   ProductCode             : "CTR-N-UDTR"
   ContentType             : Application # Application / SystemUpdate / Manual / Child / Trial
-  Logo                    : Nintendo # Nintendo / Licensed / Distributed / iQue / iQueForSystem
+  Logo                    : Homebrew
 
 RomFs:
   # Specifies the root path of the file system to include in the ROM.
